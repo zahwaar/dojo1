@@ -1,0 +1,27 @@
+#ELK deployment
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: elk-deployment
+  labels:
+    app: nginx
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: elk
+  template:
+    metadata:
+      labels:
+        app: elk
+    spec:
+      containers:
+      - name: elk
+        image: sebp/elk
+        resources:
+          requests:
+            memory: "6144Mi"
+        ports:
+        - containerPort: 5601
+        - containerPort: 9200
+        - containerPort: 5044

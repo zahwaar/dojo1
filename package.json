@@ -1,0 +1,22 @@
+{
+  "name": "microservice1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Zed",
+  "license": "ISC",
+  "dependencies": {
+    "appmetrics-zipkin": "^1.1.1",
+    "bunyan": "^1.8.12",
+    "express": "^4.16.4",
+    "logger": "0.0.1",
+    "request": "^2.88.0",
+    "request-promise-native": "^1.0.5"
+  }
+}
